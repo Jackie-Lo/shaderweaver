@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shader Weaver</title>
+<link rel="stylesheet" type="text/css" href="CSS/mainPage.css"/>
+</head>
+
+<body>
+
+
+
+
+
+<div class="MainPage">
+	<div id="TopLeft"><img src="Images/sw200x124Reflect.png" width="200" height="124" /></div>
+  	<div id="TopRight">	
+    	<a class="button" href="index.html">Home</a>
+	  <a class="button" href="gallery.html">Gallery</a>
+	  <a class="button" href="tutorials.html">Tutorials</a>
+      <a class="button" href="nodes.html">Nodes</a>
+      <a class="button" href="hotkeys.html">Hotkeys</a>
+      <a class="button" href="faq.html">FAQ</a>
+  	</div>
+    <br/><br/><br/><br/><br/>   
+</div>
+<div class="Line"></div>
+
+
+
+
+<div class="MainPage">
+  
+  	<div id="MainBody">
+	  <p>Root: <br />
+      This is the main node.Assign base texture here.Choose type between Default/Sprite/UI/Text.</p>
+      
+	  <p>Mask:<br />
+	    Draw mask to masking sub-effects.Mask node's child node effects will ONLY show in the masked area.</p>
+        
+	  <p>Color:<br />
+	    Show textures. Depth is for display order, highest depth is shown on the top.</p>
+        
+	  <p>UV:<br />
+	    Use rgba channel of this node'texture to relocate parent's uv coordinates. Use mainly for distortion.Here are some example effects,<br />
+	    floating flags,flowing water. </p>
+        
+	  <p>Alpha:<br />
+	    Use one of the rgba channel in this node'texture to do detailed aplha animation for parent nodes.</p>
+        
+	  <p>Remap:<br />
+	    Supply UV corrdinates to the parent node. Drag mode is to lay parental effects on one side of the shape.<br />
+	    Line mode is to make parental effects follow the path you created. In the texture we made,<br />
+	    Red supply  the horizontal corrdinates to parent nodes,Green supply  the vertical corrdinates.<br />
+	    Asix x:R[0,1]=U[0,1] <br />
+	    Asix y:G[0,1]=V[0,1]</p>
+  	</div> 
+</div>
+
+
+
+
+<div class="Line"></div>
+<div class="Bot">
+      <p>Shader Weaver © Jackie Lo<br />
+       	JackieLo@aliyun.com</p>
+</div>
+
+
+
+
+</body>
+</html>

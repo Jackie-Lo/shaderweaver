@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	color: #cccccc;
+	background-color: #242A38;
+	overflow-y: scroll;
+	font-family: Verdana, Arial, Georgia;
+	font-size: 13px;
+}
+
+a:link {
+	text-decoration: none;
+	color: #0099ff;
+}
+a:visited {
+	text-decoration: none;
+	color: #0099ff;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+.MainPage {
+	height: auto;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#TopLeft {
+	float: left;
+	height: 124px;
+}
+#MainBody {
+	width: 960px;
+	clear: both;
+}
+#TopRight {
+	float: right;
+	height: 30px;
+	font-size: 25px;
+	padding-bottom: 0px;
+	padding-top: 50px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.MainPage #MainBody p a {
+	text-align: justify;
+}
+
+.wip_large{
+	padding-left: 6px;
+	color: #fff;
+	font-family: Droid Sans;
+	text-align: center;
+	font-size: 20px;
+	text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.38);
+	margin-bottom: 6px;
+	clear: both;
+	margin-top: 6px;
+}
+
+.Question {
+	font-size: 20px;
+}
+.Answer {
+}
+.Bot {
+	text-align: center;
+	padding: 5px;
+}
+.Line {
+	border-bottom-style: dotted;
+}
