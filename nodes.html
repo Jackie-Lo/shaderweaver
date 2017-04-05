@@ -13,14 +13,14 @@
 
 
 <div class="MainPage">
-	<div id="TopLeft"><img src="Images/sw200x124Reflect.png" width="200" height="124" /></div>
+	<div id="TopLeft"><img src="Images/logo.png" width="310" height="71" /></div>
   	<div id="TopRight">	
-    	<a class="button" href="index.html">Home</a>
-	  <a class="button" href="gallery.html">Gallery</a>
-	  <a class="button" href="tutorials.html">Tutorials</a>
-      <a class="button" href="nodes.html">Nodes</a>
-      <a class="button" href="hotkeys.html">Hotkeys</a>
-      <a class="button" href="faq.html">FAQ</a>
+      <a class="button" href="index.html" style="font-size: 18px;">Home</a> 
+	  | <a class="button" style="font-size: 18px;"  href="gallery.html">Gallery</a>
+	  | <a class="button" style="font-size: 18px;"  href="tutorials.html">Tutorials</a>
+      | <a class="button" style="font-size: 18px;"  href="nodes.html">Nodes</a>
+      | <a class="button" style="font-size: 18px;"  href="hotkeys.html">Hotkeys</a>
+      | <a class="button" style="font-size: 18px;"  href="faq.html">FAQ</a>
   	</div>
     <br/><br/><br/><br/><br/>   
 </div>
@@ -32,28 +32,67 @@
 <div class="MainPage">
   
   	<div id="MainBody">
-	  <p>Root: <br />
-      This is the main node.Assign base texture here.Choose type between Default/Sprite/UI/Text.</p>
+	  <div class="node_desc_main_input">
+	    <div class="node_desc_inner_img"><img src="Images/nodes/root.png" width="100" height="130" /></div>
+        <div class="node_desc_main_input_right">
+        	<div class="node_desc_main_input_title">Root</div>
+        	<div class="node_desc_main_input_desc">This is the main node.Assign base texture here.Choose type between Default/Sprite/UI/Text.</div>
+        </div>
+      </div>
+      <br><br>
+		
+        
+	  <div class="node_desc_main_input">
+	    <div class="node_desc_inner_img"><img src="Images/nodes/mask.png" width="100" height="130" /></div>
+        <div class="node_desc_main_input_right">
+        	<div class="node_desc_main_input_title">Mask</div>
+        	<div class="node_desc_main_input_desc">Draw mask to masking sub-effects.Mask node's child node effects will ONLY show in the masked area.</div>
+        </div>
+      </div>
+      <br><br>
+    	
       
-	  <p>Mask:<br />
-	    Draw mask to masking sub-effects.Mask node's child node effects will ONLY show in the masked area.</p>
-        
-	  <p>Color:<br />
-	    Show textures. Depth is for display order, highest depth is shown on the top.</p>
-        
-	  <p>UV:<br />
-	    Use rgba channel of this node'texture to relocate parent's uv coordinates. Use mainly for distortion.Here are some example effects,<br />
-	    floating flags,flowing water. </p>
-        
-	  <p>Alpha:<br />
-	    Use one of the rgba channel in this node'texture to do detailed aplha animation for parent nodes.</p>
-        
-	  <p>Remap:<br />
-	    Supply UV corrdinates to the parent node. Drag mode is to lay parental effects on one side of the shape.<br />
-	    Line mode is to make parental effects follow the path you created. In the texture we made,<br />
-	    Red supply  the horizontal corrdinates to parent nodes,Green supply  the vertical corrdinates.<br />
-	    Asix x:R[0,1]=U[0,1] <br />
-	    Asix y:G[0,1]=V[0,1]</p>
+	  <div class="node_desc_main_input">
+	    <div class="node_desc_inner_img"><img src="Images/nodes/color.png" width="100" height="130" /></div>
+        <div class="node_desc_main_input_right">
+        	<div class="node_desc_main_input_title">Color</div>
+        	<div class="node_desc_main_input_desc">Show textures. Depth is for display order, highest depth is shown on the top.</div>
+        </div>
+      </div>
+      <br><br>
+
+	  <div class="node_desc_main_input">
+	    <div class="node_desc_inner_img"><img src="Images/nodes/UV.png" width="100" height="130" /></div>
+        <div class="node_desc_main_input_right">
+        	<div class="node_desc_main_input_title">UV</div>
+        	<div class="node_desc_main_input_desc">Use rgba channel of this node'texture to relocate parent's uv coordinates. Use mainly for distortion.Here are some example effects,floating flags,flowing water. </div>
+        </div>
+      </div>
+      <br><br>
+      
+	  <div class="node_desc_main_input">
+	    <div class="node_desc_inner_img"><img src="Images/nodes/alpha.png" width="100" height="130" /></div>
+        <div class="node_desc_main_input_right">
+        	<div class="node_desc_main_input_title">Alpha</div>
+        	<div class="node_desc_main_input_desc">Use one of the rgba channel in this node'texture to do detailed aplha animation for parent nodes.</div>
+        </div>
+      </div>
+      <br><br>
+
+	  <div class="node_desc_main_input">
+	    <div class="node_desc_inner_img"><img src="Images/nodes/remap.png" width="100" height="130" /></div>
+        <div class="node_desc_main_input_right">
+        	<div class="node_desc_main_input_title">Remap</div>
+        	<div class="node_desc_main_input_desc">Supply UV corrdinates to the parent node. Drag mode is to lay parental effects on one side of the shape.<br />
+        	  Line mode is to make parental effects follow the path you created. In the texture we made,<br />
+        	  Red supply  the horizontal corrdinates to parent nodes,Green supply  the vertical corrdinates.<br />
+        	  Asix x:R[0,1]=U[0,1] <br />
+       	    Asix y:G[0,1]=V[0,1]</div>
+        </div>
+      </div>
+      <br><br>   
+      
+	 
   	</div> 
 </div>
 

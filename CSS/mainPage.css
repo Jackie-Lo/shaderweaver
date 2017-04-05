@@ -6,19 +6,26 @@ body{
 	margin: 0px;
 	padding: 0px;
 	color: #cccccc;
-	background-color: #242A38;
+	background-color: #222;
 	overflow-y: scroll;
 	font-family: Verdana, Arial, Georgia;
 	font-size: 13px;
 }
 
+h4 {
+	font-size: 20px;
+	color: #0099FF;
+	margin: 5px;
+	padding: 0px;
+}
+
 a:link {
 	text-decoration: none;
-	color: #0099ff;
+	color: #cccccc;
 }
 a:visited {
 	text-decoration: none;
-	color: #0099ff;
+	color: #cccccc;
 }
 a:hover {
 	text-decoration: none;
@@ -40,13 +47,14 @@ a:active {
 #MainBody {
 	width: 960px;
 	clear: both;
+	line-height: 18px;
 }
 #TopRight {
 	float: right;
 	height: 30px;
-	font-size: 25px;
+	font-size: 20px;
 	padding-bottom: 0px;
-	padding-top: 50px;
+	padding-top: 39px;
 	padding-right: 0px;
 	padding-left: 0px;
 }
@@ -76,5 +84,37 @@ a:active {
 	padding: 5px;
 }
 .Line {
-	border-bottom-style: dotted;
+	border-bottom: dashed 1px #383838;
 }
+
+.node_desc_inner_img{
+				display: inline-block;
+			}
+				
+.node_desc_main_input{
+			
+
+		}
+
+.node_desc_main_input_right{
+	display: inline-block;
+	margin-left: 4px;
+	margin-top: 3px;
+	vertical-align: top;
+	width: 830px;
+
+}
+
+.node_desc_main_input_title{
+	font-size: 14px;
+	font-weight: 700;
+	vertical-align: top;
+	margin-bottom: 2px;
+	
+}
+
+.node_desc_main_input_desc{
+	display: inline-block;
+
+}
+
