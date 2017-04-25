@@ -43,6 +43,10 @@ a:active {
 #TopLeft {
 	float: left;
 	height: 124px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
 }
 #MainBody {
 	width: 960px;
@@ -50,13 +54,13 @@ a:active {
 	line-height: 18px;
 }
 #TopRight {
-	float: right;
+	float: left;
 	height: 30px;
 	font-size: 20px;
 	padding-bottom: 0px;
-	padding-top: 39px;
+	padding-top: 49px;
 	padding-right: 0px;
-	padding-left: 0px;
+	padding-left: 10px;
 }
 .MainPage #MainBody p a {
 	text-align: justify;
@@ -117,4 +121,3 @@ a:active {
 	display: inline-block;
 
 }
-
