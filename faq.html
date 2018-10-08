@@ -23,15 +23,15 @@
 
 <div class="MainPage">
 	<div id="TopLeft"><img src="Images/logoWeb.png" width="200" height="70" /></div>
-  	<div id="TopRight">	
-      <a class="button" href="index.html" style="font-size: 22px;">Home</a> 
+  	<div id="TopRight">
+      <a class="button" href="index.html" style="font-size: 22px;">Home</a>
 	  | <a class="button" style="font-size: 22px;"  href="examples.html">Examples</a>
 	  | <a class="button" style="font-size: 22px;"  href="tutorials.html">Tutorials</a>
       | <a class="button" style="font-size: 22px;"  href="nodes.html">Nodes</a>
       | <a class="button" style="font-size: 22px;"  href="faq.html">FAQ</a>
       | <a class="button" style="font-size: 22px;"  href="https://shaderweaver.userecho.com">Forum</a>
   	</div>
-    <br/><br/><br/><br/><br/>  
+    <br/><br/><br/><br/><br/>
 </div>
 <div class="Line"></div>
 
@@ -45,52 +45,73 @@
       <p><div class="Question">Q:<font color="#0099FF">How to support Sprite Animation?</font></div>
       <div class="Answer">Add ->Component ->Shader Weaver ->Sprite Animation to Sprite Render.</div></p>
       <br/><br/>
-      
+
        <p><div class="Question">Q:<font color="#0099FF">How to use Texture Sprite Sheet for nodes?</font></div>
       <div class="Answer">Open Node Editing Window, press '+' button on the bottom-right corner. Click 'Animation Sheet' toggle.
 Set 'Tile X','Tile Y'...
-If you wanna use single texture sprite sheet to draw a character multiple times,you need to use Shader Weaver's loop 
+If you wanna use single texture sprite sheet to draw a character multiple times,you need to use Shader Weaver's loop
 rather than use texture's import setting - warp mode.</div></p>
       <br/><br/>
-      
+
        <p><div class="Question">Q:<font color="#0099FF">How to enable HRD color?</font></div>
       <div class="Answer">Right click on color attributes.</div></p>
       <br/><br/>
-      
+
        <p><div class="Question">Q:<font color="#0099FF">How to eliminate seams on boarder?</font></div>
       <div class="Answer">In texture settings,turn off 'Generate Mip Maps' or set 'Filter Mode' to 'Point'.</div></p>
       <br/><br/>
-      
+
        <p><div class="Question">Q:<font color="#0099FF">Why effect updating takes time?</font></div>
        <div class="Answer">During the update, Shader Weaver update the shader and apply any change to textures. The texture processing stage take times.</div></p>
        <br/><br/>
-       
+
        <p>
        <div class="Question">Q:<font color="#0099FF">How to set visible layers in mask window?</font></div>
        <div class="Answer">Hold ctrl key and layer-mask popup is on the top-left corner.</div></p>
        <br/><br/>
-         
+
        <p><div class="Question">Q:<font color="#0099FF">How can I edit  nodes' attributes in the material inspector?</font></div>
        <div class="Answer">Create parameters and use them for nodes.</div></p>
        <br/><br/>
-         
+
        <p><div class="Question">Q:<font color="#0099FF">Unity keeps downloading an old version of Shader Weaver, what gives?</font></div>
    	  <div class="Answer">Make sure you're using a version of Unity it supports. If Unity is outdated, it will download the latest compatible version rather than the latest. For versioning info, check the changelog.</div></p>
       <br/><br/>
-      
+
        <p><div class="Question">Q:<font color="#0099FF">Can I sell shaders I create with Shader Weaver on the asset store?</font></div>
       <div class="Answer">Yes! It would be nice to add a note saying that the shaders are compatible with Shader Weaver, in case your customers want to open and edit them too.</div></p>
       <br/><br/>
-      
+
        <p>
        <div class="Question">Q:<font color="#0099FF">Will my shaders work / be optimized enough for mobile?</font></div>
       <div class="Answer">Your shaders will most likely work unless you've made a super expensive shader, but Shader Weaver is primarily aimed at pushing 2d visual quality, so most things are done on a per-pixel level, rather than per-vertex. Most of the time, they should work well on mobile platform.</div></p>
       <br/><br/>
-  
-  </div> 
-</div>
 
 
+      <p><div class="Question">Q:<font color="#0099FF">For sprites, some times it looks OK in the SW editor, but looks wrong in the game, why?</font></div>
+     <div class="Answer">
+       For all Shader Weaver shaders, you need to make sure<br/>
+        For Sprites, assign the exact same spirte to Sprite Renderer's 'Sprite' as the sprite used in the Root node.<br/>
+        For UI Images, assign the exact same spirte to Image's 'Source Image' as the sprite used in the Root node.<br/>
+        For Textures, make sure material's '_MainTex' is the texture used in the Root node.<br/>
+        <br/>
+        If you use sprite animation, make sure SWSpriteComponent has been added to the sprite.
+     </div></p>
+     <br/><br/>
+
+
+
+     <p><div class="Question">Q:<font color="#0099FF">How can I animate effects with custom parameters?</font></div>
+    <div class="Answer">
+      Custom parameters are just common material properties once the shader has been compiled. You can animate them by<br/>
+      1. Unity Animation(for MeshRenderer and SpriteRenderer ONLY, not for Canvas Renderer).<br/>
+      2. 3rd party tools. DoTween/PlayMaker/Bolt...<br/>
+      3. Scripts. Such as <a href="https://docs.unity3d.com/2017.4/Documentation/ScriptReference/Material.SetFloat.html">Material.SetFloat</a><br/>
+
+
+
+    </div></p>
+    <br/><br/>
 
 
 <div class="Line"></div>
